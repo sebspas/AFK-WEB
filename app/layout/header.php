@@ -24,7 +24,7 @@
 	        <div class="js-menu-btn"></div>
 	        <nav class="menu-navigation">
 	            <ul class="navigation-ul">
-	                <li class="menu-list"><a class="menu-link c-blue2 <?php if (!isset($_GET['page'])) echo current; ?>" href="index.php">Home</a></li>
+	                <li class="menu-list"><a class="menu-link c-blue2 <?php if (!isset($_GET['page'])) echo 'current'; ?>" href="index.php">Home</a></li>
 	                <li class="menu-list">
 	                	<a class="menu-link c-blue2 js-tosections <?php if (isset($_GET['page']) && $_GET['page'] == 'section') echo 'current'; ?>" >Sections</a>
 						<div class="sections">

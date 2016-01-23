@@ -5,7 +5,7 @@ class Config {
     public static $dbInfo = array(
         'driver' => 'mysql:host=localhost;dbname=afk',
         'username' => 'root',
-        'password' => 'aqwEDCtgb7'
+        'password' => 'aqwEDCtgb7;'
     );
 
     public static $path = array(
@@ -15,7 +15,7 @@ class Config {
         'controller' => 'app/controller/',
         'model' => 'app/model/',
         'css' => 'asset/css/',
-        'images' => 'http://holobox.fr/AFK/asset/images/',
+        'images' => 'asset/images/',
         'js'    => 'asset/js/',
         'outdatedbrowser' => 'asset/outdatedbrowser/',
         'messagerie' => 'asset/messagerie/',
