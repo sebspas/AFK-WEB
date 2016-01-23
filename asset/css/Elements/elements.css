@@ -1,0 +1,868 @@
+/*==========  elements.css  ==========*/
+/**
+* @content : Definition of basic html elements.
+* 
+* @tags-HTML : *, html, body, h1, h2, h3, section, div, span, nav, ul, li, a,
+* 			   p, h1, h2, h3, h4, h5, h6, form, label, textarea, input, select
+*
+* @tages-OBJECTS : .of-y, .fixed, .fixed-top, .fixed-bottom, .inline-block,
+*  				   .block, .left, .right, .clear, .center, .vt-top, .vt-mid,
+*  				   .vt-bot, .txt-justify, .txt-center, .sp1, .error, .success,
+*  				   .error-txt, .success-txt, .btn, .btn2, .btn3, .title00,
+*  				   .title0, .title1, .title2, .photo
+*
+* 
+**/
+
+
+
+/*==========  MENU  ==========
+*	1 - HTML-ELEMENTS
+*	2 - OBJECTS-ELEMENTS
+*	3 - GRID-ELEMENTS
+*	4 - FRAME-ELEMENTS
+*	5 - COLOR-ELEMENTS
+**==========  ---  ==========*/
+
+@media screen {
+
+
+/*==========  1 - HTML-ELEMENTS  ==========*/
+* {
+	outline: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+html {	
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+body {
+	background: #f8f8f8;
+	color: #252525;
+	font-family: Hallo, Garamond, serif, sans-serif;
+	transition-duration: 1.8s;
+	position: relative;  
+    top: 0;
+}
+
+
+section {
+/* Not defined */
+}
+
+div {
+/* Not defined */
+}
+
+span {
+/* Not defined */
+}
+
+
+nav {
+/* Not defined */
+}
+
+ul {
+/* Not defined */
+}
+
+ol {
+	margin-left: 25px;
+}
+
+li {
+/* Not defined */
+}
+
+a {
+/* Not defined */
+}
+
+a:hover {cursor: pointer;}
+
+p {font-size: 1.1em;}
+
+h1, h2, h3, h4, h5, h6 {padding: 4px;}
+
+h1 {
+/* Not defined */
+}
+
+h2 {
+/* Not defined */
+}
+
+h3 {
+/* Not defined */
+}
+
+form {
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+label {
+	display: inline-block;
+	font-family: Exo2;
+	font-size: 1em;
+	padding: 2px 0;
+}
+
+textarea {
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100px;
+}
+
+
+input, select, textarea {
+	border: 1px solid #a9a9a9;
+	display: inline-block;
+	width: 100%;
+	height: 35px;
+	margin: 15px 0;
+	padding: 4px;
+	background-color: #f8f8f8;
+	box-sizing: border-box;
+	font-family: Arial;
+	color: #555;
+	border-radius: 4px;
+	opacity: 0.7;
+	transition-duration: 0.3s;
+}
+
+input[type="submit"] {
+	border: none;
+	width: auto;
+	opacity: 1;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+input[type="checkbox"] {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-left: 0px;
+}
+
+
+input:focus {
+	opacity: 1;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/*-----  End of HTML-ELEMENTS  ------*/
+
+
+
+/*==========  1 - OBJECTS-ELEMENTS  ==========*/
+
+.of-y {
+	min-height: 120px;
+	max-height: 300px;
+	overflow-y: scroll;
+	margin: 5px 0; 
+}
+
+.fixed { position: fixed; }
+
+.absolute {position: absolute;}
+
+.fixed-top {
+	position: fixed;
+	top: 0;
+}
+
+.fixed-bottom {
+	position: fixed;
+	bottom: 0;
+}
+
+.inline-block { display: inline-block; }
+
+.block { display: block; }
+
+.left { float: left; }
+
+.right { float: right; }
+
+.clear { clear: both; }
+
+.center { margin: 0 auto; }
+
+.vt-top { vertical-align: top;}
+.vt-mid { vertical-align: middle;}
+.vt-bot { vertical-align: bottom;}
+
+.txt-justify { text-align: justify; }
+.txt-center { text-align: center; }
+.txt-left { text-align: left; }
+.txt-dec-none {text-decoration: none; color: #252525;}
+
+
+.ln35{line-height: 35px;}
+
+.mg-bot0 {margin: 0;}
+
+.max-width200 {width: 200px;}
+
+.sp1 { margin-left: 10px;}
+.sp1 { margin-left: 30px; padding-left: 50px;}
+
+
+.editme {
+	min-height: 300px;
+}
+
+
+.error, .success, .notif {
+	display: none;
+	width: auto;
+	min-height: 40px;
+	margin: 0;
+	padding: 15px;
+	z-index: 5;
+
+	position: fixed;
+	right: 0;
+	top: 25%;
+
+	color: #f8f8f8;
+	text-align: center;
+	border-radius: 10px;
+	line-height: 35px;
+	font-size: 1.3em;
+
+}
+
+.error:hover, .success:hover, .notif:hover {
+	cursor: pointer;
+}
+
+.error-txt, .success-txt, .notif-txt {
+	font-size: 1em;
+	text-decoration: none;
+	font-family: Hallo;
+	text-align: center;
+	line-height: 35px;
+}
+
+.error {
+	background-color:  rgba(255,103,102, 0.8);
+	box-shadow: 0px 2px 2px #FF6766;
+}
+
+.success {
+	background-color:  rgba(0,150,136, 0.8);
+	box-shadow: 0px 2px 2px #009688;
+}
+
+
+.notif {
+	background-color:  rgba(38,38,38, 0.8);
+	box-shadow: 0px 2px 2px #252525;
+}
+
+
+.error-txt, .success-txt, .notif-txt {
+	color: #f8f8f8;
+}
+
+
+.btn {
+	display: block;
+	margin: 0 auto;
+	width: auto;
+	line-height: 0px;
+	padding: 10px;
+	color: #f8f8f8;
+	font-family: Droid;
+	font-size: 1.3em;
+	text-decoration: none;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.btn2 {
+	display: inline-block;
+	height: 40px;
+	padding: 2px 8px;
+	margin-left: 5px;
+	border-radius: 2px;
+	color: #efefef;
+	text-decoration: none;
+	font-family: Droid;
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 40px;
+	transition-duration: 0.3s;
+}
+
+
+.btn3 {
+	display: block;
+	width: 100%;
+	height: 35px;
+	text-decoration: none;
+	font-family: Droid;
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 40px;
+	color: #efefef;
+	margin: 0 auto;
+}
+
+.btn4 {
+	display: block;
+	height: 35px;
+	text-decoration: none;
+	font-family: Hallo;
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 40px;
+	color: #efefef;
+	text-align: center;
+}
+
+.btn2:active {
+	box-shadow: inset 1px 1px 5px rgba( 200, 200, 200, 0.8);
+	text-shadow:  -1px -1px #555;
+}
+
+
+
+.scrollT{
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 0px;
+	right: 5px;
+	background: url('http://www.holobox.fr/AFK/asset/images/up.png') no-repeat 50% 50% #f8f8f8;
+	-webkit-background-size: 100% 100%;
+	        background-size: 100%;
+	opacity: 0.8; -webkit-transition-duration: 0.4s; transition-duration: 0.4s;
+}
+
+.scrollT:hover {
+	cursor: pointer;
+}
+
+
+.tab {margin-left: 5px;}
+
+.title00 {
+	width: 60%;
+	font-family: Hallo;
+	color: #0099ee;
+	border-bottom: 1px solid #f8f8f8;
+}
+
+.title0 {
+	width: 60%;
+	border-bottom: 1px solid #252525;
+	margin-bottom: 15px;
+}
+
+.title1 {
+	font-family: Tahoma;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.title2 {
+	font-family: Exo2;
+	color: #0099ee;
+}
+
+
+
+.photo {
+	display: block;
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+
+.photo img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.photos {
+	display: block;
+	width: 100%;
+	height: 200px;
+	margin-bottom: 25px;
+}
+
+
+object {
+	display: block;
+	width: 100%;
+	height: 320px;
+}
+
+
+/*.z2 {z-index: 5;}*/
+
+/*-----  End of OBJECTS-ELEMENTS  ------*/
+
+
+
+
+/*==========  3 - GRID-ELEMENTS  ==========*/
+
+.row {
+	display: block;
+	height: auto;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+
+.row > div { box-sizing: border-box; }
+
+
+.cols1, .cols2, .cols3, .cols4, .cols5, .cols6, .cols7, .cols8, .cols9, .cols10, .cols11, .cols12, 
+.g1, .g2, .g3, .g4, .g5, .g6, .g7 .g8, .g9, .g10 .g11, .g12 {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+
+.cols1, .g1 { width: 8.3333333%; }
+/*.g1f {display: inline-block; vertical-align: top; width: 50px;}
+*/
+.cols2, .g2 { width: 16.6666667%; }
+
+.cols3, .g3 { width: 25%; }
+
+.cols4, .g4 { width: 33.3333333%; }
+
+.cols5, .g5 { width: 41.6666667%; } 
+
+.cols6, .g6 { width: 50%; } 
+
+.cols7, .g7 { width: 58.3333333%; } 
+
+.cols8, .g8 { width: 66.6666667%; } 
+
+.cols9, .g9 { width: 75%; } 
+
+.cols10, .g10 { width: 83.3333333%; } 
+
+.cols11, .g11 { width: 91.6666667%; } 
+
+.cols12, .g12 { width: 100%; }
+
+.g1-1 {min-width: 8%; max-width: 12%;}
+
+
+/*-----  End of GRID-ELEMENTS  ------*/
+
+
+
+
+/*==========  4 - FRAME-ELEMENTS  ==========*/
+
+.frame, .frame0 {
+	display: inline-block;
+	min-height: 100px;
+	box-shadow: 0px 2px 4px #c3c3c3 ;
+}
+
+.frame0 { border: none; box-shadow: none; }
+
+.frame2 {display: inline-block; min-width: 150px; margin: 10px 0;}
+
+.frame3 {
+	display: inline-block;
+	min-width: 75px;
+	box-shadow: 0px 2px 2px #c3c3c3;
+	border-radius: 15px;
+	margin-left: -20px;
+}
+
+	.hb {
+		display: block;
+		background-color: #a3a3a3;
+	}
+
+	.hb0 { border-radius: 0; }
+
+	
+	.hb-title {
+		display: block;
+		width: 100%;
+		text-align: center;
+		color: #f8f8f8;
+		line-height: 35px;
+	}
+
+	.bb {
+		display: block;
+		height: 60px;
+		background-color: #a3a3a3;
+		border-radius: 0 0 15px 15px;
+		text-align: center;
+		color: #f8f8f8;
+		line-height: 60px;
+	}
+
+.frame-content {
+	display: block;
+	width: 100%;
+	min-height: 25px;
+	padding: 0 10px;
+	margin: 15px 0;
+	box-sizing: border-box;
+}
+
+
+.line, .line0, .line2, .line3 {
+	display: block;
+	width: 100%;
+	background: none;
+	min-height: 15px;
+	margin: 5px 0;
+}
+
+.line0 {margin: 0;}
+
+.line2 {
+	margin: 0;
+	margin-top: 15px;
+}
+
+.line3 {margin: 20px 0;}
+
+
+.line-content {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 30px;
+	padding-left: 5px;
+	margin: 5px 0;
+}
+
+.line-content-block {
+	display: block;
+	vertical-align: top;
+	line-height: 30px;
+	padding-left: 5px;
+	margin: 5px 0;
+}
+
+/*-----  End of FRAME-ELEMENTS  ------
+
+
+
+
+/*==========  5 - COLOR-ELEMENTS  ==========*/
+
+	/* Background-color */
+	.white{background-color: #f8f8f8;}
+	.white2{background-color: #fff;}
+
+	.black1 {background-color: #252525; }
+
+	.red0 { background-color: #D11001; }
+	.red1 { background-color: #E02020; }
+	.red2 { background-color: #EE4444; }
+	.red3 { background-color: #FF6766; }
+
+	.blue1{background-color: #0e284f;}
+	.blue2{background-color: #2b4e7b;}
+	.blue3{background-color: #0099ee;}
+	
+	.cyan0 { background-color: #008B8B; }
+	.cyan1 { background-color: #00A8AB; }
+	.cyan2 { background-color: #33BBBB; }
+	.cyan3 { background-color: #6BCBCA; }
+
+	.green0 { background-color: #297273; }
+	.green1 { background-color: #53872A; }
+	.green2 { background-color: #85C630; }
+	.green3 { background-color: #99E394; }
+
+
+	/* Color */
+	.c-black{color: #252525;}
+
+	.c-white{color: #f8f8f8;}
+	.c-green2{color: #85C630;}
+
+	.c-blue1{color: #0e284f;}
+	.c-blue2{color: #2b4e7b;}
+	.c-blue3{color: #0099ee;}
+
+	.c-red2 { color: #EE4444; }
+
+
+	
+
+/*-----  End of COLOR-ELEMENTS  ------ */
+
+
+
+
+/*==========  6 - ICONS-ELEMENTS  ==========*/
+
+.icon {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: none;
+	margin: 0 4px;
+	margin-right: 0;
+}
+
+.icon0 {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: none;
+	margin-top: -4px;
+	vertical-align: middle;
+}
+
+.icon2 {
+	display: inline-block;
+	vertical-align: top;
+	width: 48px;
+	height: 34px;
+	background: none;
+	margin: 0 4px;
+	margin-top: -8px;
+}
+
+.icon-content {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 32px;
+	margin-left: 0px;
+}
+
+.icon:hover:before, .icon2:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: auto;
+	background: rgba(0,0,0, 0.65);
+	color: #f8f8f8;
+	padding: 2px 4px;
+	border-radius: 4px;
+	margin-top: -28px;
+	margin-left: -8px;
+}
+
+.icon:hover, .icon2:hover { cursor: help;}
+
+
+
+/* - Uncomment to activate icon */
+
+/* date-icon */
+/*.date {
+	background: url('../../images/date.png') no-repeat 0% 0%;
+	background-size: 100%;
+}
+.date:hover:before { content: "Date de départ"; }*/
+
+
+/* talk-icon */
+/*.talk {
+	background: url('../../images/talk.png') no-repeat 0% 0%;
+	background-size: 100%;
+}
+.talk:hover:before { content: "Sociable"; }*/
+
+
+/* user-avatar */
+/*.user-avatar-l  img {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-color: #a3a3a3;
+	border-radius: 100%;
+	margin-top: 5px;
+}*/
+
+
+/* star-empty-icon */
+/*.star0 {
+	background: url('../../images/star0.png') no-repeat 0% 0%;
+	background-size: 100%;
+}*/
+
+
+/* star-full-icon */
+/*.star1 {
+	background: url('../../images/star1.png') no-repeat 0% 0%;
+	background-size: 100%;
+}*/
+
+
+/* rating-area */
+/*.rating {  
+       display: inline-block;
+       margin-left: 10px;
+       margin-top: 2px;
+       direction: rtl;
+    }
+
+    .rating a {  
+       color: #aaa;  
+       text-decoration: none;  
+       font-size: 1.2em;  
+       transition: color .4s;  
+    }
+
+	.rating a.grade,
+    .rating a:hover,  
+    .rating a:focus,  
+    .rating a:hover ~ a,  
+    .rating a:focus ~ a {  
+       color: orange;  
+       cursor: pointer;  
+    }  */
+
+
+/* departure-icon */
+/*#departure-logo {
+    display: inline-block;
+    position: absolute;
+	margin-left: -6px;
+	margin-top: 12px;
+	z-index: 5;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: url('../../images/departure.png') no-repeat 0% 0%;
+    background-size: 30px;
+}*/
+
+/* arrival-icon */
+/*#arrival-logo {
+    display: inline-block;
+    position: absolute;
+	margin-left: -6px;
+	margin-top: 12px;
+	z-index: 5;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: url('../../images/arrival.png') no-repeat 0% 0%;
+    background-size: 30px;
+}*/
+
+
+/* facebook-icon */
+.fb0 {
+	display: block;
+	width: 48px;
+	height: 48px;
+	background: url('http://www.holobox.fr/AFK/asset/images/fb0.png') no-repeat 0% 0%;
+	background-size: 48px;
+	margin: 15px;
+}
+
+
+/* twitter-icon */
+.twitter {
+	display: block;
+	width: 48px;
+	height: 48px;
+	background: url('http://www.holobox.fr/AFK/asset/images/twit.png') no-repeat 0% 45%;
+	background-size: 48px;
+	margin: 15px;
+}
+/*-----  End of ICONS-ELEMENTS  ------ */
+
+} /* Screen */
+
+
+
+/* Form */
+
+.field{
+   position: relative;
+   height: 72px;
+   padding: 16px 0 8px 0;
+}
+
+
+.field-label{
+   position: relative;
+   margin: 0;
+   display: block;
+   color:  #555;
+   font-weight: 400;
+   transform: translateY(24px);
+   transition: transform 0.3s, color 0.3s;
+   transform-origin: 0 50%;
+}
+
+.field-input{
+   position: relative;
+   display: block;
+   width: 100%;
+   background: transparent;
+   border: none;
+   -webkit-appearance: none;
+   outline: none;
+}
+
+.field::after, .field::before{
+   content:'';
+   height: 2px;
+   width: 100%;
+   position: absolute;
+   bottom: 6px;
+   left: 0;
+   background-color: #e6e6e6;
+}
+
+.field::after{
+   background-color: #0099ee;
+   transform: scaleX(0);
+   transition: transform 0.3s;
+}
+
+.has-label .field-label{
+   transform: translateY(0) scale(0.8);
+}
+
+.is-focused .field-label{
+   color: #0099ee;
+}
+.field.is-focused::after{
+   transform: scaleX(1);
+}
+
+/* DEBUG BBCODE ICON IMPORTANT */
+.bbcode img {
+	width: 20px;
+	height: 20px;
+}

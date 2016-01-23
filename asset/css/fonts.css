@@ -1,0 +1,21 @@
+/*==========  fonts.css  ==========*/
+/**
+* @content : Extra fonts corresponding
+* 			 to the graphic chart.
+* 
+* @tags: Exo2, Hallo
+*   
+**/
+
+
+/* Exo2 */
+@font-face {
+    font-family: "Exo2";
+    src: url('../fonts/Exo2.0-Regular.otf');
+}
+
+/* Hallo */
+@font-face {
+    font-family: "Hallo";
+    src: url('../fonts/Hallo-sans.otf');
+}

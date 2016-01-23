@@ -1,0 +1,266 @@
+/*==========  components.css  ==========*/
+/**
+* @content : Definition of reusable components
+* 			 specified for this website.
+* 
+* @tags : #header, .menu, .menu-logo-link, .menu-btn, .menu-list, .menu-link,
+*  		  .current, .loginbox, .slider, #main, .wrap, #footer
+**/
+
+/*==========  HEADER  ==========*/
+
+#header {
+	display: block;
+	width: 100%;
+	min-height: 20px;
+	margin-top: 10px;
+	padding-bottom: 25px;
+}
+
+
+	/*==========  MENU  ==========*/
+	.menu {
+		display: block;
+		height: 125px;
+		width: 70%;
+		margin: 0 auto;
+		padding: 0 5px;
+	}
+
+	.logo-link img {
+		display: block;
+		width: auto;
+		height: 125px;
+		margin-bottom: 6px;
+	}
+
+	.js-menu-btn {display: none;}
+
+	.menu-navigation {
+		display: block;
+	}
+
+	.menu-list {
+		display: inline-block;
+		height: auto;
+		margin-left: 15px;
+		margin-top: 45px;
+	}
+
+	.menu-link {
+		display: block;
+		padding: 4px;
+		color: #252525;
+		font-family: Exo2;
+		font-size: 1.3em;
+		
+		text-decoration: none;
+		transition-duration: 0.5s;
+	}
+
+		.menu-link:hover, a.current {
+			color: #0099ee;
+		}
+
+
+
+
+
+		/*==========  MENU-AVATAR  ==========*/
+		.menu-avatar {
+			display: inline-block;
+			width: 75px;
+			height: 75px;
+			float: right;
+			margin-top: -20px;
+			margin-right: 15px;
+		}
+
+		.menu-avatar img, .avatar img {
+			display: block;
+			width: 75px;
+			height: 75px;
+			border-radius: 10px;
+		}
+
+	/*==========  SLIDER  ==========*/
+		.slider {
+			display: block;
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+			min-height: 120px;
+			margin-top: 0px;
+			max-height: 320px;
+		}
+
+		.fluid-width-video-wrapper {
+			width: 100%;
+			position: relative;
+			padding-top: 0;
+			padding-bottom: 42%;
+
+		}
+
+
+		.fluid-width-video-wrapper iframe {
+			display: block;
+			width: 100%;
+		}
+
+
+
+/*==========  MAIN  ==========*/
+
+
+#main, .wrap {
+	display: block;
+	min-height: 600px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+
+		/*==========  PROFIL-AVATAR  ==========*/
+		.profil-avatar {
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+		}
+
+		.profil-avatar img {
+			display: block;
+			width: 200px;
+			height: 200px;
+			border-radius: 10px;
+		}
+
+
+		.liste-avatar {
+			display: block;
+			width: 100%;
+			height: 100px;
+		}
+
+
+		.avatar {
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			border-radius: 0px;
+		}
+
+
+		.avatar-com {
+			display: inline-block;
+			width: 60px;
+			height: 60px;
+			border-radius: 0;
+			margin: 15px;
+		}
+
+
+		.event-img {
+			display: inline-block;
+			width: 100px;
+			height: 101px;
+			
+		}
+
+		.event-img img {
+			display: block;
+			width: 100px;
+			height: 101px;
+
+		}
+
+
+		/*.tt{max-height: 220px;}*/
+
+
+		/*==========  CALENDAR  ==========*/
+
+		.day {
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			margin: 5px;
+			padding: 5px;
+			color: #f8f8f8;
+			text-align: center;
+			
+		}
+
+/*==========  FOOTER  ==========*/
+#footer {
+	display: block;
+	background: #252525;
+	width: auto;
+	min-height: 320px;
+	padding-top: 35px;
+}
+
+
+.post {
+	display: block;
+	width: 60%;
+	margin: 20px 0 10px 0;
+}
+
+.post a {
+	text-decoration: none;
+	color: #f8f8f8;
+}
+
+.post-author {
+	display: inline-block;
+	font-size: 1.3em;
+	font-family: Exo2;
+	text-decoration: underline;
+}
+
+.post-date {
+	margin-top: 5px;
+	font-style: italic;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+.post-content {
+	font-size: 1.1em;
+	font-family: Hallo;
+	text-align: justify;
+}
+
+
+
+.team {
+	margin-top: 120px;
+}
+
+
+.registered:hover {cursor: pointer;}
+
+.circle {
+	display: block;
+	width: 130px;
+	height: 130px;
+	border-radius: 100%;
+}
+
+.circle-span {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	font-size: 1.5em;
+	line-height: 115px;
+
+}
+
+.copyright {
+	color: #f8f8f8;
+}
+
+.copyright a {
+	color: #f8f8f8;
+}

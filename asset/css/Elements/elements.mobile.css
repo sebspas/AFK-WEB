@@ -1,0 +1,48 @@
+@media screen and (max-width: 1000px) {
+
+.title0 {
+	width: 60%;
+	border-bottom: 1px solid #252525;
+	margin-bottom: 15px;
+}
+
+.title1 {
+	font-family: Tahoma;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+
+	ul {display: block;}
+
+	
+	.cols1, .cols2, .cols3, .cols4, .cols5, .cols6, .cols7, .cols8, .cols9, .cols10, .cols11, .cols12, 
+	.g1, .g2, .g3, .g4, .g5, .g6, .g7 .g8, .g9, .g10 .g11, .g12 {
+		display: block;
+		float: none;
+		vertical-align: top;
+		margin: 20px auto;
+		padding-bottom: 10px;
+		width: 95%;
+	}
+
+	.frame, .frame0, .hb, .hb0 { border-radius: 0; }
+
+	.frame { margin: 35px auto; }
+
+	.bb { border-radius: 0; }
+
+
+
+body {
+/* Not defined */
+}
+
+
+
+} /* Mobile */
+
+
+@media screen and (max-width: 1260px) {
+	/* Not defined */
+} /* Mobile < 1260px */
