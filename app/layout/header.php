@@ -8,7 +8,7 @@
     <title>AFK : <?php if (isset($_GET['page']) && !empty($_GET['page']) && is_file(Config::$path['controller'].$_GET['page'].'.php')) echo htmlentities($_GET['page']); else echo 'Home'; ?> </title>
     <link rel="stylesheet" href="<?php echo Config::$path['css'] ?>style.css" />
     <link rel="stylesheet" href="<?php echo Config::$path['outdatedbrowser'] ?>outdatedbrowser.min.css" />
-    <link rel="stylesheet" href="<?php echo Config::$path['css'] ?>modern" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php echo Config::$path['css'] ?>modern.css" type="text/css" media="all" />
     <link href="<?php echo Config::$path['images'] ?>favicon.ico" type="image/x-icon" rel="icon" />
     <link href="<?php echo Config::$path['images'] ?>favicon.ico" type="image/x-icon" rel="shortcut icon" />
 </head>
@@ -134,7 +134,7 @@
 				echo $jeu->image;
 			}  
 			?>"
-			alt="slider" style="display:none;">
+			alt="slider">
 
 			<?php
 			if (isset($_SESSION['msg'])) {

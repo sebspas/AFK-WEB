@@ -80,7 +80,7 @@
 	</div><!-- #footer -->
 	<span class="scrollT"></span>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="<?php echo Config::$path['outdatedbrowser'] ?>outdatedbrowser.min.js"></script>
+    	<script type="text/javascript" src="<?php echo Config::$path['outdatedbrowser'] ?>outdatedbrowser.min.js"></script>
 	<script type="text/javascript" src="<?php echo Config::$path['js'] ?>velocity.min.js"></script>
     <script type="text/javascript" src="<?php echo Config::$path['js'] ?>velocity.ui.min.js"></script>
     <script type="text/javascript" src="<?php echo Config::$path['js'] ?>fn.scrollT.js"></script>
